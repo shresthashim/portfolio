@@ -1,0 +1,190 @@
+#project {
+  height: 83vh;
+}
+
+.project_swiper-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-top: -60px;
+}
+
+.project_swiper-project-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+.project_swiper-description {
+  margin-top: 0.2rem;
+  color: var(--color-light);
+  font-size: 1rem;
+  text-align: center;
+}
+.project_swiper-image-wrapper {
+  position: relative;
+  perspective: 1000px;
+  margin-top: -60px;
+}
+
+.project_swiper-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.project_swiper-image-wrapper:hover .project_swiper-image {
+  transform: rotateY(180deg);
+}
+
+.project_swiper-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  margin-right: 15px;
+  transition: all ease-in-out 0.3s;
+}
+
+.project_swiper-button:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+  transform: scale(0.9);
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.swiper-container {
+  margin-top: 2rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-primary);
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color-primary);
+}
+/* Swiper Container */
+.swiper-container {
+  margin-top: 2rem;
+}
+
+/* Swiper Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--color-secondary);
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-primary);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Swiper Slide */
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.project_swiper-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project_swiper-image:hover {
+  transform: rotateY(180deg);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Title */
+.project_swiper-project-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
+/* Project Description */
+.project_swiper-description {
+  margin-top: 0.2rem;
+  color: var(--color-light);
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Project Buttons */
+.project_swiper-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  margin-right: 15px;
+  transition: all ease-in-out 0.3s;
+}
+
+.project_swiper-button:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+  transform: scale(0.9);
+}

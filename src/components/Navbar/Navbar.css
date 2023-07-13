@@ -1,0 +1,41 @@
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+}
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+nav a.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0.7rem 1.2rem; /* Adjust the padding values as per your preference */
+    bottom: 1.5rem; /* Adjust the distance from the bottom as per your preference */
+  }
+
+  nav a {
+    padding: 0.6rem; /* Adjust the padding values as per your preference */
+    font-size: 0.9rem; /* Adjust the font size as per your preference */
+  }
+}
