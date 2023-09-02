@@ -31,8 +31,8 @@ const App = () => {
       title: "Tic Tac Toe",
       description:
         "Enjoy the classic game of Tic Tac Toe with this interactive and engaging web version built using HTML, CSS, and JavaScript. Challenge your friends or test your strategic skills against the computer in this timeless battle for victory!",
-      liveDemo: " https://ashim1123.github.io/TicTacToe/",
-      github: "https://github.com/AsHim1123/TicTacToe",
+      liveDemo: "https://ashim1123.github.io/tic_tac_toe-game/",
+      github: "https://github.com/AsHim1123/tic_tac_toe-game",
     },
     {
       id: 2,
