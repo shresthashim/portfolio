@@ -16,7 +16,7 @@ footer a {
 }
 .logo_image {
   background-color: var(--color-primary);
-  height: 6rem;
+  max-height: 6rem;
   border-radius: 20%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;

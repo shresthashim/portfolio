@@ -23,10 +23,52 @@ import TextUImg from "./assets/textutils.png";
 import WeatherImg from "./assets/weather.png";
 import DiceImg from "./assets/dice.png";
 import DictionaryImg from "./assets/dictionary.png";
+import googleImg from "./assets/google.png"
+import notebookImg from "./assets/notebook.png"
+import BtrackerImg from "./assets/budget.png"
+import IEImg from "./assets/I-E.png"
 const App = () => {
   const projects = [
     {
+      
       id: 1,
+      image: BtrackerImg,
+      title: "Budget Tracker",
+      description:
+        "A straightforward Expense Management System built with MERN Stack, enabling users to easily track their income and expenses through a simple login interface.",
+      liveDemo: "https://income-expense-tracker.cyclic.app/",
+      github: "https://github.com/AsHim1123/Budget-Tracker-login-Mern",
+    },    {
+      
+      id: 2,
+      image: googleImg,
+      title: "Google Clone",
+      description:
+        "A Google Clone crafted using Next.js and styled with Tailwind CSS for a sleek and responsive user interface.",
+      liveDemo: "https://ashim1123.github.io/",
+      github: "https://github.com/AsHim1123/Google-Clone-Next-JS-13",
+    },    {
+      
+      id: 3,
+      image: notebookImg,
+      title: "NoteBook in Cloud",
+      description:
+        "A cloud-based notebook application created using the MERN stack, providing a seamless and collaborative platform for users to manage and access their notes from anywhere.!",
+      liveDemo: "https://ashim1123.github.io/",
+      github: "https://github.com/AsHim1123/Notebook-MERN",
+    },    {
+      
+      id: 4,
+      image: IEImg,
+      title: "Income Expense Tracker",
+      description:
+        "Income Expense Trscker application (No Login) having advanced UI than first project.Also Made By MERN Stack!",
+      liveDemo: "https://ashim1123.github.io/",
+      github: "https://github.com/AsHim1123/Income-Expense-Tracker_MERN",
+    },
+    {
+
+      id: 5,
       image: tictactoeImg,
       title: "Tic Tac Toe",
       description:
@@ -35,7 +77,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/tic_tac_toe-game",
     },
     {
-      id: 2,
+      id: 6,
       image: budgetcalcImg,
       title: "Budget Calculator",
       description: "An intuitive React-based budget calculator for efficient financial management.",
@@ -43,7 +85,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/Budget-Calculator",
     },
     {
-      id: 3,
+      id: 7,
       image: notesAppImg,
       title: "Notes App",
       description: "A sleek and versatile HTML/CSS/JS note app for organizing thoughts and tasks effortlessly.",
@@ -51,7 +93,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/Note-App",
     },
     {
-      id: 4,
+      id: 8,
       image: TodoImg,
       title: "To-Do List",
       description: "A user-friendly HTML/CSS/JS to-do list app for efficient task management and productivity.",
@@ -59,7 +101,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/To-Do-List-App",
     },
     {
-      id: 5,
+      id: 9,
       image: calcImg,
       title: "Calculator",
       description: "A feature-rich HTML/CSS/JS calculator app for quick and accurate mathematical calculations.",
@@ -67,7 +109,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/Calculator",
     },
     {
-      id: 6,
+      id: 10,
       image: rpsImg,
       title: "Rock Paper Scissors",
       description: "An interactive HTML/CSS/JS rock paper scissors game for fun and competitive decision-making.",
@@ -75,7 +117,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/Rock-Paper-Scissors",
     },
     {
-      id: 7,
+      id: 11,
       image: bmiImg,
       title: "BMI Calculator",
       description: "A user-friendly HTML/CSS/JS BMI calculator app for assessing and tracking body mass index easily.",
@@ -83,7 +125,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/BMI-Calculator",
     },
     {
-      id: 8,
+      id: 12,
       image: PassImg,
       title: "Random Password Generator",
       description:
@@ -92,7 +134,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/Random-Password-Generator1",
     },
     {
-      id: 9,
+      id: 13,
       image: TempImg,
       title: "Temperature Converter",
       description: "A temperature converter made by HTML, CSS and JavaScript",
@@ -100,7 +142,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/Temperature-Converter",
     },
     {
-      id: 10,
+      id: 14,
       image: TodoImg,
       title: "To-Do React App",
       description: "A To-Do React Application made by React and using Bootstrap.",
@@ -108,7 +150,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/To-Do-React-App",
     },
     {
-      id: 11,
+      id: 15,
       image: QRImg,
       title: "QR Code Generator",
       description:
@@ -117,7 +159,7 @@ const App = () => {
       github: " https://github.com/AsHim1123/QR-Code-Generator",
     },
     {
-      id: 12,
+      id: 16,
       image: TextUImg,
       title: "Text Utils React App",
       description: "Customize your texts and paragraphs through this React based Text Utils Application.",
@@ -125,7 +167,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/Text-Utils-React",
     },
     {
-      id: 13,
+      id: 17,
       image: WeatherImg,
       title: "Weather App",
       description: "Stay prepared with real-time weather updates at your fingertips using this weather app.",
@@ -133,7 +175,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/Weather-App",
     },
     {
-      id: 14,
+      id: 18,
       image: DiceImg,
       title: "Dice Roll Simulator",
       description: "Roll the virtual dice and let chance decide your fate.",
@@ -141,7 +183,7 @@ const App = () => {
       github: "https://github.com/AsHim1123/Dice-Roll",
     },
     {
-      id: 15,
+      id: 19,
       image: DictionaryImg,
       title: "Dictionary",
       description: "Find the meaning of words from API based dictionary app. ",
