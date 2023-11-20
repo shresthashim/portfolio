@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.163d78f1.css",
-    "main.js": "/static/js/main.845c7a66.js",
+    "main.css": "/static/css/main.45c13a0f.css",
+    "main.js": "/static/js/main.02e7a38f.js",
     "static/media/about-me.png": "/static/media/about-me.061f07fe1836c67b2928.png",
     "static/media/dictionary.png": "/static/media/dictionary.e4b9e40798be9305de30.png",
     "static/media/bmi.png": "/static/media/bmi.ea31264d36ea9f287494.png",
@@ -13,18 +13,22 @@
     "static/media/calc.png": "/static/media/calc.5e4ef8688b31bb3eed13.png",
     "static/media/todo.png": "/static/media/todo.5a5b054089b20aa67643.png",
     "static/media/wave.png": "/static/media/wave.dee648757c0af30379a3.png",
+    "static/media/budget.png": "/static/media/budget.04b1c71302fe9737a061.png",
     "static/media/notes.png": "/static/media/notes.12de2c1d039a48f50249.png",
+    "static/media/I-E.png": "/static/media/I-E.a694fefe553bb065b353.png",
     "static/media/tictactoe.jpg": "/static/media/tictactoe.a95236843372ea2cee9a.jpg",
     "static/media/dice.png": "/static/media/dice.7d8369249822d16c7bfb.png",
+    "static/media/google.png": "/static/media/google.cadee8cdb0c0afb1a713.png",
     "static/media/Logo.png": "/static/media/Logo.41f1a422305a2ce0741d.png",
+    "static/media/notebook.png": "/static/media/notebook.a3214e56cf8880e06451.png",
     "static/media/QR.png": "/static/media/QR.a90b4c0f245dbcd23226.png",
     "static/media/textutils.png": "/static/media/textutils.452e79add75c58a23766.png",
     "index.html": "/index.html",
-    "main.163d78f1.css.map": "/static/css/main.163d78f1.css.map",
-    "main.845c7a66.js.map": "/static/js/main.845c7a66.js.map"
+    "main.45c13a0f.css.map": "/static/css/main.45c13a0f.css.map",
+    "main.02e7a38f.js.map": "/static/js/main.02e7a38f.js.map"
   },
   "entrypoints": [
-    "static/css/main.163d78f1.css",
-    "static/js/main.845c7a66.js"
+    "static/css/main.45c13a0f.css",
+    "static/js/main.02e7a38f.js"
   ]
 }
