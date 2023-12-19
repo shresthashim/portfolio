@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.45c13a0f.css",
-    "main.js": "/static/js/main.a26d62a0.js",
+    "main.js": "/static/js/main.1c5bb4b4.js",
     "static/media/about-me.png": "/static/media/about-me.061f07fe1836c67b2928.png",
     "static/media/dictionary.png": "/static/media/dictionary.e4b9e40798be9305de30.png",
     "static/media/bmi.png": "/static/media/bmi.ea31264d36ea9f287494.png",
@@ -17,15 +17,16 @@
     "static/media/notes.png": "/static/media/notes.12de2c1d039a48f50249.png",
     "static/media/tictactoe.jpg": "/static/media/tictactoe.a95236843372ea2cee9a.jpg",
     "static/media/dice.png": "/static/media/dice.7d8369249822d16c7bfb.png",
+    "static/media/chathub.png": "/static/media/chathub.88080b6820fe77479bbc.png",
     "static/media/Logo.png": "/static/media/Logo.41f1a422305a2ce0741d.png",
     "static/media/QR.png": "/static/media/QR.a90b4c0f245dbcd23226.png",
     "static/media/textutils.png": "/static/media/textutils.452e79add75c58a23766.png",
     "index.html": "/index.html",
     "main.45c13a0f.css.map": "/static/css/main.45c13a0f.css.map",
-    "main.a26d62a0.js.map": "/static/js/main.a26d62a0.js.map"
+    "main.1c5bb4b4.js.map": "/static/js/main.1c5bb4b4.js.map"
   },
   "entrypoints": [
     "static/css/main.45c13a0f.css",
-    "static/js/main.a26d62a0.js"
+    "static/js/main.1c5bb4b4.js"
   ]
 }
