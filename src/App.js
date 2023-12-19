@@ -39,7 +39,7 @@ const App = () => {
     {
       id: 2,
       image: chathubImg,
-      title: "Budget Tracker",
+      title: "ChatHub",
       description:
         "ChatHub, a MERN stack-powered chat app with Socket.IO integration, delivers instant messaging, responsive design, secure authentication. Deployed in Vercel.",
       liveDemo: "https://yourchathub.vercel.app/",
