@@ -25,6 +25,8 @@ import DiceImg from "./assets/dice.png";
 import DictionaryImg from "./assets/dictionary.png";
 import BtrackerImg from "./assets/budget.png";
 import chathubImg from "./assets/chathub.png";
+import ThreeDPortfolioImg from "./assets/ThreeDPortfolio.png";
+
 const App = () => {
   const projects = [
     {
@@ -38,6 +40,14 @@ const App = () => {
     },
     {
       id: 2,
+      image: ThreeDPortfolioImg,
+      title: "My 3d Portfolio",
+      description: "A 3D portfolio website built with Vite and Three.js.",
+      liveDemo: "https://shresthashim.github.io/3d-portfolio",
+      github: "https://github.com/shresthashim/3d-portfolio",
+    },
+    {
+      id: 3,
       image: chathubImg,
       title: "ChatHub",
       description:
@@ -46,7 +56,7 @@ const App = () => {
       github: "https://github.com/shresthashim/chat-app",
     },
     {
-      id: 3,
+      id: 4,
       image: tictactoeImg,
       title: "Tic Tac Toe",
       description:
@@ -55,7 +65,7 @@ const App = () => {
       github: "https://github.com/shresthashim/tic_tac_toe-game",
     },
     {
-      id: 4,
+      id: 5,
       image: budgetcalcImg,
       title: "Budget Calculator",
       description: "An intuitive React-based budget calculator for efficient financial management.",
@@ -63,7 +73,7 @@ const App = () => {
       github: "https://github.com/shresthashim/Budget-Calculator",
     },
     {
-      id: 5,
+      id: 6,
       image: notesAppImg,
       title: "Notes App",
       description: "A sleek and versatile HTML/CSS/JS note app for organizing thoughts and tasks effortlessly.",
@@ -71,7 +81,7 @@ const App = () => {
       github: "https://github.com/shresthashim/Note-App",
     },
     {
-      id: 6,
+      id: 7,
       image: TodoImg,
       title: "To-Do List",
       description: "A user-friendly HTML/CSS/JS to-do list app for efficient task management and productivity.",
@@ -79,7 +89,7 @@ const App = () => {
       github: "https://github.com/shresthashim/To-Do-List-App",
     },
     {
-      id: 7,
+      id: 8,
       image: calcImg,
       title: "Calculator",
       description: "A feature-rich HTML/CSS/JS calculator app for quick and accurate mathematical calculations.",
@@ -87,7 +97,7 @@ const App = () => {
       github: "https://github.com/shresthashim/Calculator",
     },
     {
-      id: 8,
+      id: 9,
       image: rpsImg,
       title: "Rock Paper Scissors",
       description: "An interactive HTML/CSS/JS rock paper scissors game for fun and competitive decision-making.",
@@ -95,7 +105,7 @@ const App = () => {
       github: "https://github.com/shresthashim/Rock-Paper-Scissors",
     },
     {
-      id: 9,
+      id: 10,
       image: bmiImg,
       title: "BMI Calculator",
       description: "A user-friendly HTML/CSS/JS BMI calculator app for assessing and tracking body mass index easily.",
@@ -103,7 +113,7 @@ const App = () => {
       github: "https://github.com/shresthashim/BMI-Calculator",
     },
     {
-      id: 10,
+      id: 11,
       image: PassImg,
       title: "Random Password Generator",
       description:
@@ -112,7 +122,7 @@ const App = () => {
       github: "https://github.com/shresthashim/Random-Password-Generator1",
     },
     {
-      id: 11,
+      id: 12,
       image: TempImg,
       title: "Temperature Converter",
       description: "A temperature converter made by HTML, CSS and JavaScript",
@@ -120,7 +130,7 @@ const App = () => {
       github: "https://github.com/shresthashim/Temperature-Converter",
     },
     {
-      id: 12,
+      id: 13,
       image: TodoImg,
       title: "To-Do React App",
       description: "A To-Do React Application made by React and using Bootstrap.",
@@ -128,7 +138,7 @@ const App = () => {
       github: "https://github.com/shresthashim/To-Do-React-App",
     },
     {
-      id: 13,
+      id: 14,
       image: QRImg,
       title: "QR Code Generator",
       description:
@@ -137,7 +147,7 @@ const App = () => {
       github: " https://github.com/shresthashim/QR-Code-Generator",
     },
     {
-      id: 14,
+      id: 15,
       image: TextUImg,
       title: "Text Utils React App",
       description: "Customize your texts and paragraphs through this React based Text Utils Application.",
@@ -145,7 +155,7 @@ const App = () => {
       github: "https://github.com/shresthashim/Text-Utils-React",
     },
     {
-      id: 15,
+      id: 16,
       image: WeatherImg,
       title: "Weather App",
       description: "Stay prepared with real-time weather updates at your fingertips using this weather app.",
@@ -153,7 +163,7 @@ const App = () => {
       github: "https://github.com/shresthashim/Weather-App",
     },
     {
-      id: 16,
+      id: 17,
       image: DiceImg,
       title: "Dice Roll Simulator",
       description: "Roll the virtual dice and let chance decide your fate.",
