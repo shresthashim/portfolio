@@ -52,8 +52,8 @@ const App = () => {
       image: googleImg,
       title: "Google Clone",
       description: "A clone of google made by Next JS 14 using app router and styling by Tailwilnd Css. Deployed in vercel.",
-      liveDemo: "https://shresthashim.github.io/google",
-      github: "https://google-clone-nextjs-14.vercel.app/",
+      liveDemo: "https://google-clone-nextjs-14.vercel.app/",
+      github: "https://github.com/shresthashim/Google-Clone-NextJs14",
     },
 
     {
