@@ -103,7 +103,7 @@ const Experience = () => {
                   <DiMongodb style={{ marginRight: "5px" }} />
                   MongoDB
                 </h4>
-                <small className='text-light'>Intermediate</small>
+                <small className='text-light'>Experienced</small>
               </div>
             </article>
             <article className='experience_details'>
