@@ -3,7 +3,7 @@ import "./Experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { AiFillHtml5 } from "react-icons/ai";
 import { ImCss3 } from "react-icons/im";
-import { SiJavascript } from "react-icons/si";
+import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { BsFillBootstrapFill } from "react-icons/bs";
 import { FaReact } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
@@ -56,6 +56,16 @@ const Experience = () => {
                 <h4>
                   <BsFillBootstrapFill style={{ marginRight: "5px" }} />
                   Bootstrap
+                </h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>
+                  <SiTailwindcss style={{ marginRight: "5px" }} />
+                  Tailwind CSS
                 </h4>
                 <small className='text-light'>Experienced</small>
               </div>
