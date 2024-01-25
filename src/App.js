@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
@@ -28,6 +28,7 @@ import chathubImg from "./assets/chathub.png";
 import ThreeDPortfolioImg from "./assets/ThreeDPortfolio.png";
 import googleImg from "./assets/google.png";
 import moviehubImg from "./assets/moviehub.png";
+import { ClimbingBoxLoader } from "react-spinners";
 
 const App = () => {
   const projects = [
@@ -199,18 +200,41 @@ const App = () => {
       github: "https://github.com/shresthashim/Dictionary",
     },
   ];
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4400);
+  }, []);
+
   return (
     <>
-      <Header />
-      <Navbar />
-      <About />
-      <Qualification />
-      <Experience />
-      <Project projects={projects} />
-      <Contact />
-      <Location />
-      <Footer />
-      <ScrollUp />
+      {loading ? (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "100vh",
+          }}
+        >
+          <ClimbingBoxLoader color={"#F37A24"} loading={loading} size={30} aria-label='Loading Spinner' data-testid='loader' />
+        </div>
+      ) : (
+        <>
+          <Header />
+          <Navbar />
+          <About />
+          <Qualification />
+          <Experience />
+          <Project projects={projects} />
+          <Contact />
+          <Location />
+          <Footer />
+          <ScrollUp />
+        </>
+      )}
     </>
   );
 };
