@@ -205,7 +205,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 4400);
+    }, 3500);
   }, []);
 
   return (
@@ -219,7 +219,7 @@ const App = () => {
             height: "100vh",
           }}
         >
-          <ClimbingBoxLoader color={"#F37A24"} loading={loading} size={30} aria-label='Loading Spinner' data-testid='loader' />
+          <ClimbingBoxLoader speedMultiplier='1.2' color={"#F37A24"} loading={loading} size={30} aria-label='Loading Spinner' data-testid='loader' />
         </div>
       ) : (
         <>
