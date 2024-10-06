@@ -7,10 +7,10 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Header = () => {
   const [text] = useTypewriter({
-    words: ["Web Developer", "Full Stack Learner", "Designer", "CS Student"],
-    loop: {},
-    typeSpeed: 120,
-    deleteSpeed: 100,
+    words: ["Web Developer", "Tech Ethusiast", "Software Engineer", "Computer Student"],
+    loop: true,
+    deleteSpeed: 50,
+    delaySpeed: 1500,
   });
   const [iAM, setIAM] = useState("I am");
   const [showDetails, setShowDetails] = useState(false);
@@ -20,9 +20,11 @@ const Header = () => {
     setShowDetails(!showDetails);
     setIAM(showDetails ? "I am" : "");
   };
+
   setTimeout(() => {
     setShake(!showDetails);
   }, 10);
+
   return (
     <header>
       <div className='container header_container'>
@@ -32,12 +34,13 @@ const Header = () => {
         </div>
         <h1 className='animated fadeInDown'>AsHim Shrestha</h1>
         <h5 className='text-light animated fadeIn'>Computer Engineering Undergraduate</h5>
+
         <div className='logo-container'>
           <div className={`logo ${showDetails ? "expanded" : ""} ${shake ? "shake" : ""}`} onClick={handleLogoClick}>
             <span className='logo_text'>{iAM}</span>
           </div>
           {showDetails && (
-            <div className='details'>
+            <div className='details centered-text'>
               <h2 className='text'>
                 <span className='typewriter'>
                   {text}

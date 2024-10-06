@@ -47,11 +47,12 @@ const About = () => {
             </article>
           </div>
           <p>
-            Welcome to my portfolio! I am a passionate and undergraduate Computer Engineering student currently studying at
-            Pashchimanchal Campus. I am specializing in Front-end Web Development with a strong focus on React and Next JS.I excel
-            in leveraging my expertise in React, HTML, CSS, and JavaScript to develop intuitive and visually appealing web
-            applications. While my primary strength lies in front-end development, I also possess considerable knowledge of
-            backend programming languages such as Node and Express JS, and database systems like MongoDB.
+            Welcome to my portfolio! I am a passionate undergraduate Computer Engineering student currently studying at
+            Pashchimanchal Campus. I am specializing in Front-end Web Development with a strong focus on React and Next.js. I
+            excel in leveraging my expertise in React to develop intuitive and visually appealing web applications. While my
+            primary strength lies in front-end development, I also possess considerable knowledge of backend programming languages
+            such as Node.js and Express.js, along with database systems like MongoDB, PostgreSQL, MySQL, and containerization
+            using Docker.
           </p>
           <div className='languages'>
             <h5>Language Proficiency :</h5>
@@ -67,16 +68,6 @@ const About = () => {
                 ))}
               </ul>
             )}
-          </div>
-          <div className='hobbies'>
-            <h5>Hobbies : </h5>
-            <ul>
-              <li>Writing Codes</li>
-              <li>Developing Projects</li>
-              <li>Watching Sci-Fi</li>
-              <li>Playing Football</li>
-              <li>Playing video/mobile games</li>
-            </ul>
           </div>
           <a href='#contact' className='btn btn-primary'>
             Let's Talk
