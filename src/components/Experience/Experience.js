@@ -7,10 +7,19 @@ import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { BsFillBootstrapFill } from "react-icons/bs";
 import { FaReact } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
-import { FaPython } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+import { SiGraphql } from "react-icons/si";
+import { SiCanva } from "react-icons/si";
+import { SiFigma } from "react-icons/si";
+import { SiWordpress } from "react-icons/si";
+import { SiLinux } from "react-icons/si";
+import { FaGit } from "react-icons/fa";
+
 const Experience = () => {
   return (
     <section id='experience'>
@@ -100,26 +109,6 @@ const Experience = () => {
               <BsPatchCheckFill className='experience_details-icon' />
               <div>
                 <h4>
-                  <DiMongodb style={{ marginRight: "5px" }} />
-                  MongoDB
-                </h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience_details'>
-              <BsPatchCheckFill className='experience_details-icon' />
-              <div>
-                <h4>
-                  <FaPython style={{ marginRight: "5px" }} />
-                  Python
-                </h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-            <article className='experience_details'>
-              <BsPatchCheckFill className='experience_details-icon' />
-              <div>
-                <h4>
                   <FaNodeJs style={{ marginRight: "5px" }} />
                   Node JS
                 </h4>
@@ -136,22 +125,142 @@ const Experience = () => {
                 <small className='text-light'>Intermediate</small>
               </div>
             </article>
-          </div>
-        </div>
-        <div>
-          <h3>Other Programming Languages</h3>
-          <div className='experience_content'>
             <article className='experience_details'>
               <BsPatchCheckFill className='experience_details-icon' />
               <div>
-                <h4>C</h4>
+                <h4>
+                  <DiMongodb style={{ marginRight: "5px" }} />
+                  MongoDB
+                </h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>
+                  <SiMysql style={{ marginRight: "5px" }} />
+                  MySQL
+                </h4>
                 <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience_details'>
               <BsPatchCheckFill className='experience_details-icon' />
               <div>
-                <h4>C++</h4>
+                <h4>
+                  <SiPostgresql style={{ marginRight: "5px" }} />
+                  PostgreSQL
+                </h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>
+                  <SiGraphql style={{ marginRight: "5px" }} />
+                  GraphQL
+                </h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div className='experience_tools'>
+          <h3>Tools & Technologies</h3>
+          <div className='experience_content'>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>
+                  <SiWordpress style={{ marginRight: "5px" }} />
+                  WordPress
+                </h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>
+                  <SiCanva style={{ marginRight: "5px" }} />
+                  Canva
+                </h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>
+                  <SiFigma style={{ marginRight: "5px" }} />
+                  Figma
+                </h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>
+                  <SiLinux style={{ marginRight: "5px" }} />
+                  Linux
+                </h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>
+                  <FaDocker style={{ marginRight: "5px" }} />
+                  Docker
+                </h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>
+                  <FaGit style={{ marginRight: "5px" }} />
+                  Git
+                </h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div>
+          <h3> Programming Languages</h3>
+          <div className='experience_content'>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>C / C++</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>Python</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>Javascript</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>Typescript</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
             </article>
