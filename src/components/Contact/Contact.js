@@ -26,15 +26,21 @@ const Contact = () => {
     }
 
     emailjs
-      .sendForm("service_c83dwne", "template_ockk57m", form.current, "x-HD87C-dNfoMo-AS")
-      .then(() => {
-        toast.success("Message submitted successfully!", { autoClose: 3000 });
-        e.target.reset();
-      })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-        toast.error("Failed to send message, please try again.", { autoClose: 3000 });
-      });
+    .sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      form.current,
+      process.env.REACT_APP_EMAILJS_USER_ID
+    )
+    .then(() => {
+      toast.success("Message submitted successfully!", { autoClose: 3000 });
+      e.target.reset();
+    })
+    .catch((error) => {
+      console.error("Error sending email:", error);
+      toast.error("Failed to send message, please try again.", { autoClose: 3000 });
+    });
+  
   };
 
   return (
