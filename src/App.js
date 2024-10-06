@@ -7,7 +7,6 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Project from "./components/Projects/Project";
 import ScrollUp from "./components/ScrollUp/ScrollUp";
-import Location from "./components/Location/Location";
 import Qualification from "./components/Qualification/Qualification";
 import tictactoeImg from "./assets/tictactoe.jpg";
 import budgetcalcImg from "./assets/budgetcalc.png";
@@ -230,7 +229,6 @@ const App = () => {
           <Experience />
           <Project projects={projects} />
           <Contact />
-          <Location />
           <Footer />
           <ScrollUp />
         </>
