@@ -52,8 +52,8 @@ const Contact = () => {
           <article className='contact_option'>
             <MdEmail className='contact_option-icon' />
             <h4>Email</h4>
-            <h5>ashimsth89@gmail.com</h5>
-            <a href='mailto:ashimsth89@gmail.com' rel='noreferrer' target='_blank'>
+            <h5>ashim@ashimshrestha.me</h5>
+            <a href='mailto:ashim@ashimshrestha.me' rel='noreferrer' target='_blank'>
               Send A Message
             </a>
           </article>
