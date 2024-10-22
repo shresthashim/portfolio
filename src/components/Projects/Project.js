@@ -1,11 +1,10 @@
 import React from "react";
 import "./Project.css";
 import SwiperCore from "swiper";
-import { Navigation } from 'swiper/modules';
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-
 
 SwiperCore.use([Navigation]);
 
@@ -19,16 +18,18 @@ const Projects = ({ projects }) => {
           <SwiperSlide key={project.id}>
             <div className='swiper-slide'>
               <div className='project_swiper-image-wrapper'>
-                <img className='project_swiper-image' src={project.image} alt={project.title} />
+                <img className='project_swiper-image' src={project.image} alt={project.title} loading='lazy' />
               </div>
               <h3 className='project_swiper-project-title'>{project.title}</h3>
               <p className='project_swiper-description'>{project.description}</p>
               <button className='project_swiper-button' onClick={() => window.open(project.liveDemo)}>
                 Live Demo
               </button>
-              <button className='project_swiper-button' onClick={() => window.open(project.github)}>
-                GitHub
-              </button>
+              {project.github && (
+                <button className='project_swiper-button' onClick={() => window.open(project.github)}>
+                  GitHub
+                </button>
+              )}
             </div>
           </SwiperSlide>
         ))}

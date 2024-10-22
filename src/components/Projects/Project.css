@@ -1,13 +1,5 @@
 #project {
-  height: 83vh;
-}
-
-.project_swiper-image {
-  width: 100%;
-  max-height: 300px;
-  object-fit: contain;
-  border-radius: 10px;
-  margin-top: -60px;
+  height: 88vh;
 }
 
 .project_swiper-project-title {
@@ -23,24 +15,6 @@
   color: var(--color-light);
   font-size: 1rem;
   text-align: center;
-}
-.project_swiper-image-wrapper {
-  position: relative;
-  perspective: 1000px;
-  margin-top: -60px;
-}
-
-.project_swiper-image {
-  width: 100%;
-  max-height: 300px;
-  object-fit: contain;
-  border-radius: 10px;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.project_swiper-image-wrapper:hover .project_swiper-image {
-  transform: rotateY(180deg);
 }
 
 .project_swiper-button {
@@ -135,19 +109,20 @@
 
 .project_swiper-image {
   width: 100%;
-  max-height: 300px;
-  object-fit: contain;
+  max-height: 400px; /* Increased height to make the image more prominent */
+  object-fit: contain; /* Makes the image fill the area more naturally */
   border-radius: 10px;
-  transition: transform 0.6s;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
   transform-style: preserve-3d;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem; /* Adds spacing below the image */
 }
 
 .project_swiper-image:hover {
-  transform: rotateY(180deg);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 
+}
 /* Project Title */
 .project_swiper-project-title {
   font-size: 1.2rem;
