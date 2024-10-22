@@ -1,32 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.96aceea2.css",
-    "main.js": "/static/js/main.61bf7abc.js",
+    "main.css": "/static/css/main.c9a4c637.css",
+    "main.js": "/static/js/main.b4a45e0a.js",
     "static/media/about-me.png": "/static/media/about-me.5478f34f3ba03ad6a7b3.png",
-    "static/media/dictionary.png": "/static/media/dictionary.b837febd3bc1631150b9.png",
-    "static/media/bmi.png": "/static/media/bmi.3cbc6f91f72202cc4cb2.png",
-    "static/media/temp.png": "/static/media/temp.aa1472167e772bb53031.png",
-    "static/media/rps.png": "/static/media/rps.8d9ebd87a5f3c205e0de.png",
-    "static/media/weather.png": "/static/media/weather.446238d54136bafa1f74.png",
-    "static/media/pass.png": "/static/media/pass.15d42abd9c5c5e2d7359.png",
-    "static/media/budgetcalc.png": "/static/media/budgetcalc.838fb81d221175849ff0.png",
-    "static/media/calc.png": "/static/media/calc.ec8e5f9031fd90b47997.png",
-    "static/media/todo.png": "/static/media/todo.d3eda715e584ef12c513.png",
-    "static/media/ThreeDPortfolio.png": "/static/media/ThreeDPortfolio.34414826bd1aec3ed18d.png",
     "static/media/wave.png": "/static/media/wave.b65b92928bd693d10e6f.png",
-    "static/media/budget.png": "/static/media/budget.d3b5323b3f7749e4dbd6.png",
-    "static/media/moviehub.png": "/static/media/moviehub.fb9779c98e355655e766.png",
-    "static/media/notes.png": "/static/media/notes.52b1345147ed39e50707.png",
-    "static/media/tictactoe.jpg": "/static/media/tictactoe.19685cbe9bb8720c559f.jpg",
-    "static/media/dice.png": "/static/media/dice.5ac8f49cc40ecc284cd1.png",
-    "static/media/google.png": "/static/media/google.80d57c395742fcaea875.png",
-    "static/media/chathub.png": "/static/media/chathub.6221100c12259fe0e6d2.png",
     "index.html": "/index.html",
-    "main.96aceea2.css.map": "/static/css/main.96aceea2.css.map",
-    "main.61bf7abc.js.map": "/static/js/main.61bf7abc.js.map"
+    "main.c9a4c637.css.map": "/static/css/main.c9a4c637.css.map",
+    "main.b4a45e0a.js.map": "/static/js/main.b4a45e0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.96aceea2.css",
-    "static/js/main.61bf7abc.js"
+    "static/css/main.c9a4c637.css",
+    "static/js/main.b4a45e0a.js"
   ]
 }
