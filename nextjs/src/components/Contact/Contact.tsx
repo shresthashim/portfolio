@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import styles from "./Contact.module.css"; 
+import styles from "./Contact.module.css";
 import { MdEmail } from "react-icons/md";
 import { FaFacebookMessenger } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -44,7 +44,9 @@ const Contact: React.FC = () => {
       })
       .catch((error) => {
         console.error("Error sending email:", error);
-        toast.error("Failed to send message, please try again.", { autoClose: 3000 });
+        toast.error("Failed to send message, please try again.", {
+          autoClose: 3000,
+        });
       });
   };
 
@@ -57,8 +59,12 @@ const Contact: React.FC = () => {
           <article className={styles.contact_option}>
             <MdEmail className={styles.contact_option_icon} />
             <h4>Email</h4>
-            <h5>ashim@ashimshrestha.me</h5>
-            <a href="mailto:ashim@ashimshrestha.me" rel="noreferrer" target="_blank">
+            <h5>ashimsth89@gmail.com</h5>
+            <a
+              href="mailto:ashimsth89@gmail.com"
+              rel="noreferrer"
+              target="_blank"
+            >
               Send A Message
             </a>
           </article>
@@ -74,15 +80,37 @@ const Contact: React.FC = () => {
             <IoLogoWhatsapp className={styles.contact_option_icon} />
             <h4>WhatsApp</h4>
             <h5>+977-9826261277</h5>
-            <a href="https://api.whatsapp.com/send?phone=9779826261277" rel="noreferrer" target="_blank">
+            <a
+              href="https://api.whatsapp.com/send?phone=9779826261277"
+              rel="noreferrer"
+              target="_blank"
+            >
               Send A Message
             </a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail} className={styles.form}>
-          <input type="text" name="name" placeholder="Your Full Name" required className={styles.input} />
-          <input type="email" name="email" placeholder="Email" required className={styles.input} />
-          <textarea name="message" rows={7} placeholder="Your Message" required className={styles.textarea}></textarea>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Full Name"
+            required
+            className={styles.input}
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+            className={styles.input}
+          />
+          <textarea
+            name="message"
+            rows={7}
+            placeholder="Your Message"
+            required
+            className={styles.textarea}
+          ></textarea>
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>

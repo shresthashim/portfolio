@@ -23,7 +23,7 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
-    <section id='project'>
+    <section id="project">
       <h5>Showcasing my work</h5>
       <h2>Projects</h2>
       <Swiper navigation>
@@ -31,19 +31,32 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           <SwiperSlide key={project.id}>
             <div className={styles.swiper_slide}>
               <div className={styles.project_swiper_image_wrapper}>
-                <img className={styles.project_swiper_image} src={project.image} alt={project.title} loading='lazy' />
+                <img
+                  className={styles.project_swiper_image}
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
+                />
               </div>
-              <h3 className={styles.project_swiper_project_title}>{project.title}</h3>
-              <p className={styles.project_swiper_description}>{project.description}</p>
-         
+              <h3 className={styles.project_swiper_project_title}>
+                {project.title}
+              </h3>
+              <p className={styles.project_swiper_description}>
+                {project.description}
+              </p>
 
-              {/* Add wrapper div for centering */}
               <div className={styles.project_swiper_buttons_wrapper}>
-                <button className={styles.project_swiper_button} onClick={() => window.open(project.liveDemo)}>
+                <button
+                  className={styles.project_swiper_button}
+                  onClick={() => window.open(project.liveDemo)}
+                >
                   Live Demo
                 </button>
                 {project.github && (
-                  <button className={styles.project_swiper_button} onClick={() => window.open(project.github)}>
+                  <button
+                    className={styles.project_swiper_button}
+                    onClick={() => window.open(project.github)}
+                  >
                     GitHub
                   </button>
                 )}

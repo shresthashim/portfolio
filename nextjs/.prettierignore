@@ -1,0 +1,20 @@
+# Ignore files and directories that don't need formatting
+node_modules
+dist
+build
+public
+.next
+coverage
+
+# Ignore configuration files
+*.config.js
+*.config.json
+*.lock
+
+# Ignore compiled files
+*.min.js
+*.bundle.js
+
+# Ignore specific files
+package-lock.json
+yarn.lock

@@ -41,7 +41,6 @@
   transition: all ease-in-out 0.3s;
 }
 
-
 .project_swiper_button:hover {
   background: var(--color-white);
   color: var(--color-bg);

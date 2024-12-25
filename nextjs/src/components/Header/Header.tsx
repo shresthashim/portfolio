@@ -10,7 +10,12 @@ import styles from "./Header.module.css";
 
 const Header: React.FC = () => {
   const [text] = useTypewriter({
-    words: ["Web Developer", "Tech Enthusiast", "Software Engineer", "Computer Student"],
+    words: [
+      "Web Developer",
+      "Tech Enthusiast",
+      "Software Engineer",
+      "Computer Student",
+    ],
     loop: true,
     deleteSpeed: 50,
     delaySpeed: 1500,
@@ -32,7 +37,9 @@ const Header: React.FC = () => {
           <h5>Hello, I'm</h5>
         </div>
         <h1 className={styles.fadeInDown}>Ashim Shrestha</h1>
-        <h5 className={styles.text_light}>Computer Engineering Undergraduate</h5>
+        <h5 className={styles.text_light}>
+          Computer Engineering Undergraduate
+        </h5>
 
         <div className={styles.logo_container}>
           <div

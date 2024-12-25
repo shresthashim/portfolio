@@ -35,19 +35,32 @@ const Footer: React.FC<FooterProps> = () => {
         </li>
       </ul>
       <div className={styles.footer_socials}>
-        <a href="https://www.facebook.com/shresthashim/" rel="noreferrer" target="_blank">
+        <a
+          href="https://www.facebook.com/shresthashim/"
+          rel="noreferrer"
+          target="_blank"
+        >
           <BsFacebook />
         </a>
-        <a href="https://www.instagram.com/ashim_1123/" rel="noreferrer" target="_blank">
+        <a
+          href="https://www.instagram.com/ashim_1123/"
+          rel="noreferrer"
+          target="_blank"
+        >
           <AiFillInstagram />
         </a>
-        <a href="https://discord.com/channels/@me" rel="noreferrer" target="_blank">
+        <a
+          href="https://discord.com/channels/@me"
+          rel="noreferrer"
+          target="_blank"
+        >
           <BsDiscord />
         </a>
       </div>
       <div className={styles.footer_copyright}>
         <small>
-          Copyright &copy; {new Date().getFullYear()} AsHim Shrestha. All Rights Reserved.
+          Copyright &copy; {new Date().getFullYear()} AsHim Shrestha. All Rights
+          Reserved.
         </small>
       </div>
     </footer>

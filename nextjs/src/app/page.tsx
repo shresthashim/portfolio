@@ -22,6 +22,7 @@ const Page: React.FC = () => {
       <Experience />
       <Projects projects={projects} />
       <Contact />
+      <ScrollUp />
     </>
   );
 };

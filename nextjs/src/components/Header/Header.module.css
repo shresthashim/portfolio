@@ -1,5 +1,5 @@
 .header {
-  margin-top: 7rem;
+  margin-top: 5rem;
   overflow: hidden;
 }
 
@@ -106,7 +106,7 @@
   }
 }
 
-.logo-container {
+.logo_container {
   position: relative;
   display: flex;
   justify-content: center;

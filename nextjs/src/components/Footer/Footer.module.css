@@ -10,6 +10,10 @@
   color: var(--color-bg);
 }
 
+.footer a:hover {
+  color: var(--color-white);
+}
+
 .footer_logo {
   font-size: 2rem;
   font-weight: 500;
