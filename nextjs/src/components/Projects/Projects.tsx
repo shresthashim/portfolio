@@ -5,6 +5,7 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import Image from "next/image";
 
 SwiperCore.use([Navigation]);
 
@@ -31,11 +32,14 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           <SwiperSlide key={project.id}>
             <div className={styles.swiper_slide}>
               <div className={styles.project_swiper_image_wrapper}>
-                <img
+                <Image
                   className={styles.project_swiper_image}
                   src={project.image}
                   alt={project.title}
+                  height={300}
+                  width={400}
                   loading="lazy"
+                  layout="responsive"
                 />
               </div>
               <h3 className={styles.project_swiper_project_title}>

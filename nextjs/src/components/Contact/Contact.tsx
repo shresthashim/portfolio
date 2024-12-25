@@ -8,6 +8,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 
 const Contact: React.FC = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -60,33 +61,33 @@ const Contact: React.FC = () => {
             <MdEmail className={styles.contact_option_icon} />
             <h4>Email</h4>
             <h5>ashimsth89@gmail.com</h5>
-            <a
+            <Link
               href="mailto:ashimsth89@gmail.com"
               rel="noreferrer"
               target="_blank"
             >
               Send A Message
-            </a>
+            </Link>
           </article>
           <article className={styles.contact_option}>
             <FaFacebookMessenger className={styles.contact_option_icon} />
             <h4>Messenger</h4>
             <h5>AsHim Shrestha</h5>
-            <a href="https://m.me/ashim1123" rel="noreferrer" target="_blank">
+            <Link href="https://m.me/ashim1123" rel="noreferrer" target="_blank">
               Send A Message
-            </a>
+            </Link>
           </article>
           <article className={styles.contact_option}>
             <IoLogoWhatsapp className={styles.contact_option_icon} />
             <h4>WhatsApp</h4>
             <h5>+977-9826261277</h5>
-            <a
+            <Link
               href="https://api.whatsapp.com/send?phone=9779826261277"
               rel="noreferrer"
               target="_blank"
             >
               Send A Message
-            </a>
+            </Link>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail} className={styles.form}>

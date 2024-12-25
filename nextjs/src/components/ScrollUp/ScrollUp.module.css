@@ -1,26 +1,37 @@
 .scrollup {
   position: fixed;
   right: calc(2.5rem + 17px);
-  bottom: -20%;
+  bottom: -20%; /* Initially hidden off the screen */
   background: rgba(0, 0, 0, 0.8);
   opacity: 0.8;
   padding: 0.5rem 0.8rem;
   border-radius: 1rem;
   z-index: 10;
-  transition: var(--transition);
+  transition: bottom 0.3s ease, opacity 0.3s ease;
 }
+
 .scrollup_icon {
+  display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  color: var(--color-primary);
+  color: var(--color-primary); /* Replace with your color variable */
 }
+
 .scrollup_icon:hover {
-  background: transparent;
-  color: var(--color-white);
+  color: var(--color-white); /* Replace with your color variable */
 }
-.show-scroll {
-  bottom: 3rem;
+
+.showScroll {
+  bottom: 3rem; /* Move the button up to make it visible */
 }
+
+@media screen and (max-width: 768px) {
+  .scrollup {
+    display: none; /* Hide the button entirely on mobile devices */
+  }
+}
+
 @media screen and (max-width: 992px) {
   .scrollup {
     right: 1.5rem;
@@ -28,14 +39,5 @@
   }
   .scrollup_icon {
     font-size: 2rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .scrollup {
-    right: 1rem;
-    padding: 0.4rem;
-  }
-  .scrollup_icon {
-    font-size: 1.3rem;
   }
 }

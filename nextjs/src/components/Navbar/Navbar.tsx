@@ -8,6 +8,7 @@ import { BsBookmarkFill } from "react-icons/bs";
 import { AiFillMessage } from "react-icons/ai";
 import { IoIosSchool } from "react-icons/io";
 import { AiFillProject } from "react-icons/ai";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const [activeNav, setActiveNav] = useState<string>("#");
@@ -52,36 +53,36 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={styles.navbar}>
-      <a href="#" className={activeNav === "#" ? styles.active : ""}>
+      <Link href="#" className={activeNav === "#" ? styles.active : ""}>
         <AiFillHome />
-      </a>
-      <a href="#about" className={activeNav === "#about" ? styles.active : ""}>
+      </Link>
+      <Link href="#about" className={activeNav === "#about" ? styles.active : ""}>
         <BiUser />
-      </a>
-      <a
+      </Link>
+      <Link
         href="#qualification"
         className={activeNav === "#qualification" ? styles.active : ""}
       >
         <IoIosSchool />
-      </a>
-      <a
+      </Link>
+      <Link
         href="#experience"
         className={activeNav === "#experience" ? styles.active : ""}
       >
         <BsBookmarkFill />
-      </a>
-      <a
+      </Link>
+      <Link
         href="#project"
         className={activeNav === "#project" ? styles.active : ""}
       >
         <AiFillProject />
-      </a>
-      <a
+      </Link>
+      <Link
         href="#contact"
         className={activeNav === "#contact" ? styles.active : ""}
       >
         <AiFillMessage />
-      </a>
+      </Link>
     </nav>
   );
 };

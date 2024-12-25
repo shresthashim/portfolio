@@ -5,57 +5,58 @@ import { AiFillInstagram } from "react-icons/ai";
 import { BsDiscord } from "react-icons/bs";
 import styles from "./Footer.module.css";
 import LOGO from "../../../public/assets/Logo.png";
+import Link from "next/link";
 
 type FooterProps = {};
 
 const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className={styles.footer}>
-      <a href="#" className={styles.footer_logo}>
+      <Link href="#" className={styles.footer_logo}>
         <Image src={LOGO} alt="Logo" className={styles.logo_image} />
-      </a>
+      </Link>
       <ul className={styles.permalinks}>
         <li>
-          <a href="#">Home</a>
+          <Link href="#">Home</Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link href="#about">About</Link>
         </li>
         <li>
-          <a href="#qualification">Qualification</a>
+          <Link href="#qualification">Qualification</Link>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <Link href="#experience">Experience</Link>
         </li>
         <li>
-          <a href="#project">Projects</a>
+          <Link href="#project">Projects</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link href="#contact">Contact</Link>
         </li>
       </ul>
       <div className={styles.footer_socials}>
-        <a
+        <Link
           href="https://www.facebook.com/shresthashim/"
           rel="noreferrer"
           target="_blank"
         >
           <BsFacebook />
-        </a>
-        <a
+        </Link>
+        <Link
           href="https://www.instagram.com/ashim_1123/"
           rel="noreferrer"
           target="_blank"
         >
           <AiFillInstagram />
-        </a>
-        <a
+        </Link>
+        <Link
           href="https://discord.com/channels/@me"
           rel="noreferrer"
           target="_blank"
         >
           <BsDiscord />
-        </a>
+        </Link>
       </div>
       <div className={styles.footer_copyright}>
         <small>

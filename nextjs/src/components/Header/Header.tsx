@@ -7,15 +7,12 @@ import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
 import HELLO from "../../../public/assets/wave.png";
 import styles from "./Header.module.css";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   const [text] = useTypewriter({
-    words: [
-      "Web Developer",
-      "Tech Enthusiast",
-      "Software Engineer",
-      "Computer Student",
-    ],
+    words: ["Web Developer", "Tech Enthusiast", "Software Engineer", "Coder"],
+
     loop: true,
     deleteSpeed: 50,
     delaySpeed: 1500,
@@ -60,12 +57,11 @@ const Header: React.FC = () => {
           )}
         </div>
 
-        <h2 className={styles.say_hi}>Wanna Say a Hi?</h2>
         <CTA />
         <HeaderSocials />
-        <a href="#contact" className={styles.scroll_down}>
+        <Link href="#contact" className={styles.scroll_down}>
           Scroll Down
-        </a>
+        </Link>
       </div>
     </header>
   );

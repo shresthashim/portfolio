@@ -41,6 +41,7 @@
   transition: all ease-in-out 0.3s;
 }
 
+
 .project_swiper_button:hover {
   background: var(--color-white);
   color: var(--color-bg);
@@ -56,9 +57,6 @@
   padding: 2rem;
 }
 
-.swiper-container {
-  margin-top: 2rem;
-}
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -113,7 +111,7 @@
 
 .project_swiper_image {
   width: 100%;
-  max-height: 400px; /* Increased height to make the image more prominent */
+  max-height: 450px; /* Increased height to make the image more prominent */
   object-fit: contain; /* Makes the image fill the area more naturally */
   border-radius: 10px;
   transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
@@ -122,13 +120,11 @@
   margin-bottom: 1rem; /* Adds spacing below the image */
 }
 
-.project_swiper_image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
+
 
 .project_swiper_image_wrapper {
   width: 100%;
+  padding: 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
