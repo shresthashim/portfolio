@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;500;600&display=swap");
+
+.about_container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+.about_me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+  display: grid;
+  place-items: center;
+}
+.about_me-image {
+  border-radius: 2rem;
+  overflow: hidden;
+
+  transition: var(--transition);
+}
+.about_me-image:hover {
+  transform: scale(1.04);
+}
+
+
+.about_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.about_card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+.about_card:hover {
+  background-color: transparent;
+  border-color: var(--color-primary);
+  cursor: default;
+}
+.about_icon {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about_card h5 {
+  font-size: 0.95rem;
+}
+.about_card small {
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+.about_content p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color-light);
+}
+
+@media screen and (max-width: 1024px) {
+  .about_container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .about_me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+  .about_content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+.languages {
+  margin-top: 30px;
+}
+
+.languages h5,
+.hobbies h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.languages ul,
+.hobbies ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.languages li,
+.hobbies li {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  background-color: var(--color-primary);
+  padding: 8px 15px;
+  border-radius: 30px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.languages li:before,
+.hobbies li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.languages li:hover,
+.hobbies li:hover {
+  transform: translateY(-2px);
+}
+
+.languages li:hover:before,
+.hobbies li:hover:before {
+  transform: scaleX(1);
+}
+
+.languages li:last-child,
+.hobbies li:last-child {
+  margin-right: 0;
+}
+.toggle_languages {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.toggle_languages:hover {
+  background-color: var(--color-primary-dark);
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .about_me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+  .about_cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .about_content {
+    text-align: center;
+  }
+  .about_content p {
+    margin: 1.5rem 0;
+  }
+}
