@@ -26,6 +26,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <ScrollUp />
       </body>
     </html>
   );

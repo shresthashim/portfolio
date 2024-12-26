@@ -1,12 +1,25 @@
+
+"use client"
 import React from "react";
 import styles from "./Projects.module.css";
-import SwiperCore from "swiper";
-import { Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
+import dynamic from "next/dynamic";
 import "swiper/css";
 import "swiper/css/navigation";
-import Image from "next/image";
 
+// Dynamically import Swiper with ssr: false
+const SwiperComponent = dynamic(
+  () => import("swiper/react").then((mod) => mod.Swiper),
+  {
+    ssr: false,
+  }
+);
+
+import { SwiperSlide } from "swiper/react";
+import SwiperCore from "swiper";
+import { Navigation } from "swiper/modules";
+
+// Initialize Swiper with Navigation
 SwiperCore.use([Navigation]);
 
 interface Project {
@@ -22,12 +35,13 @@ interface ProjectsProps {
   projects: Project[];
 }
 
-const Projects: React.FC<ProjectsProps> = ({ projects }) => {
+const ProjectItem: React.FC<ProjectsProps> = ({ projects }) => {
   return (
     <section id="project">
       <h5>Showcasing my work</h5>
       <h2>Projects</h2>
-      <Swiper navigation>
+      {/* Use the dynamically imported SwiperComponent here */}
+      <SwiperComponent navigation>
         {projects.map((project) => (
           <SwiperSlide key={project.id}>
             <div className={styles.swiper_slide}>
@@ -68,9 +82,9 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>
+      </SwiperComponent>
     </section>
   );
 };
 
-export default Projects;
+export default ProjectItem;
