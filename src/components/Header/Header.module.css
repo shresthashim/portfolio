@@ -187,9 +187,7 @@
 
 /* Responsive Styles */
 @media screen and (max-width: 600px) {
-  .header {
-    height: 57vh;
-  }
+
 
   .hello_wave {
     margin-bottom: 0.5rem;

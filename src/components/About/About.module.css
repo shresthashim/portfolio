@@ -18,13 +18,12 @@
   display: grid;
   place-items: center;
 }
-.about_me-image {
+.about_me_image {
   border-radius: 2rem;
   overflow: hidden;
-
   transition: var(--transition);
 }
-.about_me-image:hover {
+.about_me_image:hover {
   transform: scale(1.04);
 }
 
