@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import React from "react";
 import styles from "./Projects.module.css";
 import Image from "next/image";
@@ -8,12 +7,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // Dynamically import Swiper with ssr: false
-const SwiperComponent = dynamic(
-  () => import("swiper/react").then((mod) => mod.Swiper),
-  {
-    ssr: false,
-  }
-);
+const SwiperComponent = dynamic(() => import("swiper/react").then((mod) => mod.Swiper), {
+  ssr: false,
+});
 
 import { SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
@@ -37,11 +33,10 @@ interface ProjectsProps {
 
 const ProjectItem: React.FC<ProjectsProps> = ({ projects }) => {
   return (
-    <section id="project">
+    <section id='project'>
       <h5>Showcasing my work</h5>
       <h2>Projects</h2>
-      {/* Use the dynamically imported SwiperComponent here */}
-      <SwiperComponent navigation>
+      <SwiperComponent navigation slidesPerView={1} autoHeight>
         {projects.map((project) => (
           <SwiperSlide key={project.id}>
             <div className={styles.swiper_slide}>
@@ -51,30 +46,20 @@ const ProjectItem: React.FC<ProjectsProps> = ({ projects }) => {
                   src={project.image}
                   alt={project.title}
                   height={300}
-                  width={400}
-                  loading="lazy"
-                  layout="responsive"
+                  width={300}
+                  loading='lazy'
+                  layout='responsive'
                 />
               </div>
-              <h3 className={styles.project_swiper_project_title}>
-                {project.title}
-              </h3>
-              <p className={styles.project_swiper_description}>
-                {project.description}
-              </p>
+              <h3 className={styles.project_swiper_project_title}>{project.title}</h3>
+              <p className={styles.project_swiper_description}>{project.description}</p>
 
               <div className={styles.project_swiper_buttons_wrapper}>
-                <button
-                  className={styles.project_swiper_button}
-                  onClick={() => window.open(project.liveDemo)}
-                >
+                <button className={styles.project_swiper_button} onClick={() => window.open(project.liveDemo)}>
                   Live Demo
                 </button>
                 {project.github && (
-                  <button
-                    className={styles.project_swiper_button}
-                    onClick={() => window.open(project.github)}
-                  >
+                  <button className={styles.project_swiper_button} onClick={() => window.open(project.github)}>
                     GitHub
                   </button>
                 )}
