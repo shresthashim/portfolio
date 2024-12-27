@@ -25,15 +25,9 @@ const Navbar: React.FC = () => {
 
       if (aboutSection && scrollPosition < aboutSection.offsetTop) {
         setActiveNav("#");
-      } else if (
-        qualificationSection &&
-        scrollPosition < qualificationSection.offsetTop
-      ) {
+      } else if (qualificationSection && scrollPosition < qualificationSection.offsetTop) {
         setActiveNav("#about");
-      } else if (
-        experienceSection &&
-        scrollPosition < experienceSection.offsetTop
-      ) {
+      } else if (experienceSection && scrollPosition < experienceSection.offsetTop) {
         setActiveNav("#qualification");
       } else if (projectSection && scrollPosition < projectSection.offsetTop) {
         setActiveNav("#experience");
@@ -53,34 +47,22 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={styles.navbar}>
-      <Link href="#" className={activeNav === "#" ? styles.active : ""}>
+      <Link href='#' className={activeNav === "#" ? styles.active : ""}>
         <AiFillHome />
       </Link>
-      <Link href="#about" className={activeNav === "#about" ? styles.active : ""}>
+      <Link href='#about' className={activeNav === "#about" ? styles.active : ""}>
         <BiUser />
       </Link>
-      <Link
-        href="#qualification"
-        className={activeNav === "#qualification" ? styles.active : ""}
-      >
+      <Link href='#qualification' className={activeNav === "#qualification" ? styles.active : ""}>
         <IoIosSchool />
       </Link>
-      <Link
-        href="#experience"
-        className={activeNav === "#experience" ? styles.active : ""}
-      >
+      <Link href='#experience' className={activeNav === "#experience" ? styles.active : ""}>
         <BsBookmarkFill />
       </Link>
-      <Link
-        href="#project"
-        className={activeNav === "#project" ? styles.active : ""}
-      >
+      <Link href='#project' className={activeNav === "#project" ? styles.active : ""}>
         <AiFillProject />
       </Link>
-      <Link
-        href="#contact"
-        className={activeNav === "#contact" ? styles.active : ""}
-      >
+      <Link href='#contact' className={activeNav === "#contact" ? styles.active : ""}>
         <AiFillMessage />
       </Link>
     </nav>

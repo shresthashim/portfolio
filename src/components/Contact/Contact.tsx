@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className={styles.contact}>
+    <section id='contact' className={styles.contact}>
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
       <div className={`container ${styles.contact_container}`}>
@@ -61,11 +61,7 @@ const Contact: React.FC = () => {
             <MdEmail className={styles.contact_option_icon} />
             <h4>Email</h4>
             <h5>ashimsth89@gmail.com</h5>
-            <Link
-              href="mailto:ashimsth89@gmail.com"
-              rel="noreferrer"
-              target="_blank"
-            >
+            <Link href='mailto:ashimsth89@gmail.com' rel='noreferrer' target='_blank'>
               Send A Message
             </Link>
           </article>
@@ -73,7 +69,7 @@ const Contact: React.FC = () => {
             <FaFacebookMessenger className={styles.contact_option_icon} />
             <h4>Messenger</h4>
             <h5>AsHim Shrestha</h5>
-            <Link href="https://m.me/ashim1123" rel="noreferrer" target="_blank">
+            <Link href='https://m.me/ashim1123' rel='noreferrer' target='_blank'>
               Send A Message
             </Link>
           </article>
@@ -81,38 +77,16 @@ const Contact: React.FC = () => {
             <IoLogoWhatsapp className={styles.contact_option_icon} />
             <h4>WhatsApp</h4>
             <h5>+977-9826261277</h5>
-            <Link
-              href="https://api.whatsapp.com/send?phone=9779826261277"
-              rel="noreferrer"
-              target="_blank"
-            >
+            <Link href='https://api.whatsapp.com/send?phone=9779826261277' rel='noreferrer' target='_blank'>
               Send A Message
             </Link>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail} className={styles.form}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            required
-            className={styles.input}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            required
-            className={styles.input}
-          />
-          <textarea
-            name="message"
-            rows={7}
-            placeholder="Your Message"
-            required
-            className={styles.textarea}
-          ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <input type='text' name='name' placeholder='Your Full Name' required className={styles.input} />
+          <input type='email' name='email' placeholder='Email' required className={styles.input} />
+          <textarea name='message' rows={7} placeholder='Your Message' required className={styles.textarea}></textarea>
+          <button type='submit' className='btn btn-primary'>
             Send Message
           </button>
         </form>

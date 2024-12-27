@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 import "swiper/css";
 import "swiper/css/navigation";
 
-// Dynamically import Swiper with ssr: false
+
 const SwiperComponent = dynamic(() => import("swiper/react").then((mod) => mod.Swiper), {
   ssr: false,
 });
@@ -15,7 +15,7 @@ import { SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import { Navigation } from "swiper/modules";
 
-// Initialize Swiper with Navigation
+
 SwiperCore.use([Navigation]);
 
 interface Project {

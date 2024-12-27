@@ -5,15 +5,13 @@ import styles from "./Qualification.module.css";
 
 const Qualification: React.FC = () => {
   return (
-    <section id="qualification">
+    <section id='qualification'>
       <h5>Educational Pursuits</h5>
       <h2>Qualification</h2>
 
       <div className={styles.qualification_container}>
         <div className={styles.qualification_tabs}>
-          <div
-            className={`${styles.qualification_button} ${styles.qualification_active} ${styles.button_flex}`}
-          >
+          <div className={`${styles.qualification_button} ${styles.qualification_active} ${styles.button_flex}`}>
             <IoIosSchool className={styles.qualification_icon} />
             Education
           </div>
@@ -22,16 +20,9 @@ const Qualification: React.FC = () => {
           <div>
             <div className={styles.qualification_data}>
               <div>
-                <h3 className={styles.qualification_title}>
-                  Bachelor in Computer Engineering
-                </h3>
-                <span className={styles.qualification_subtitle}>
-                  Western Region Campus
-                </span>
-                <h4
-                  className="text-light"
-                  style={{ fontSize: "13px", marginTop: "-7px" }}
-                >
+                <h3 className={styles.qualification_title}>Bachelor in Computer Engineering</h3>
+                <span className={styles.qualification_subtitle}>Western Region Campus</span>
+                <h4 className='text-light' style={{ fontSize: "13px", marginTop: "-7px" }}>
                   Lamachaur, Pokhara
                 </h4>
                 <div className={styles.qualification_calendar}>
@@ -51,13 +42,8 @@ const Qualification: React.FC = () => {
               </div>
               <div>
                 <h3 className={styles.qualification_title}>+2 Science</h3>
-                <span className={styles.qualification_subtitle}>
-                  Valmiki Shiksha Sadan
-                </span>
-                <h4
-                  className="text-light"
-                  style={{ fontSize: "13px", marginTop: "-7px" }}
-                >
+                <span className={styles.qualification_subtitle}>Valmiki Shiksha Sadan</span>
+                <h4 className='text-light' style={{ fontSize: "13px", marginTop: "-7px" }}>
                   Bharatpur, Chitwan
                 </h4>
                 <div className={styles.qualification_calendar}>
@@ -68,13 +54,8 @@ const Qualification: React.FC = () => {
             <div className={styles.qualification_data}>
               <div>
                 <h3 className={styles.qualification_title}>Secondary Level</h3>
-                <span className={styles.qualification_subtitle}>
-                  Samata Shiksha Niketan
-                </span>
-                <h4
-                  className="text-light"
-                  style={{ fontSize: "13px", marginTop: "-7px" }}
-                >
+                <span className={styles.qualification_subtitle}>Samata Shiksha Niketan</span>
+                <h4 className='text-light' style={{ fontSize: "13px", marginTop: "-7px" }}>
                   Bharatpur, Chitwan
                 </h4>
                 <div className={styles.qualification_calendar}>
@@ -94,13 +75,8 @@ const Qualification: React.FC = () => {
               </div>
               <div>
                 <h3 className={styles.qualification_title}>Primary Level</h3>
-                <span className={styles.qualification_subtitle}>
-                  Samata Shiksha Niketan
-                </span>
-                <h4
-                  className="text-light"
-                  style={{ fontSize: "13px", marginTop: "-7px" }}
-                >
+                <span className={styles.qualification_subtitle}>Samata Shiksha Niketan</span>
+                <h4 className='text-light' style={{ fontSize: "13px", marginTop: "-7px" }}>
                   Bharatpur, Chitwan
                 </h4>
                 <div className={styles.qualification_calendar}>

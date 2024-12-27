@@ -30,19 +30,14 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <div className={styles.header_container}>
         <div className={styles.hello_wave}>
-          <Image src={HELLO} className={styles.wave} alt="Wave" />
+          <Image src={HELLO} className={styles.wave} alt='Wave' />
           <h5>Hello, I'm</h5>
         </div>
         <h1 className={styles.fadeInDown}>Ashim Shrestha</h1>
-        <h5 className={styles.text_light}>
-          Computer Engineering Undergraduate
-        </h5>
+        <h5 className={styles.text_light}>Computer Engineering Undergraduate</h5>
 
         <div className={styles.logo_container}>
-          <div
-            className={`${styles.logo} ${showDetails ? styles.expanded : ""}`}
-            onClick={handleLogoClick}
-          >
+          <div className={`${styles.logo} ${showDetails ? styles.expanded : ""}`} onClick={handleLogoClick}>
             <span className={styles.logo_text}>{iAM}</span>
           </div>
           {showDetails && (
@@ -50,7 +45,7 @@ const Header: React.FC = () => {
               <h2 className={styles.text}>
                 <span className={styles.typewriter}>
                   {text}
-                  <Cursor cursorStyle="|" cursorColor="black" />
+                  <Cursor cursorStyle='|' cursorColor='black' />
                 </span>
               </h2>
             </div>
@@ -59,7 +54,7 @@ const Header: React.FC = () => {
 
         <CTA />
         <HeaderSocials />
-        <Link href="#contact" className={styles.scroll_down}>
+        <Link href='#contact' className={styles.scroll_down}>
           Scroll Down
         </Link>
       </div>

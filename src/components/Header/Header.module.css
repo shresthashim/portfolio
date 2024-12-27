@@ -113,17 +113,16 @@
   transition: all 0.3s ease-in-out;
   z-index: 1;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.6);
-  animation: shake 0.6s ease-in-out infinite; /* Apply shake animation by default */
+  animation: shake 0.6s ease-in-out infinite;
 }
 
-/* No shake when expanded */
 .logo.expanded {
   width: 200px;
   height: 200px;
   color: var(--color-bg-variant);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border: 2px solid #5408d9;
-  animation: none; /* Remove shake animation when expanded */
+  animation: none;
 }
 
 .logo_text {
@@ -185,10 +184,7 @@
   background: var(--color-primary);
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 600px) {
-
-
   .hello_wave {
     margin-bottom: 0.5rem;
   }

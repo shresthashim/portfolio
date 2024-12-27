@@ -1,7 +1,7 @@
 .scrollup {
   position: fixed;
   right: calc(2.5rem + 17px);
-  bottom: -20%; /* Initially hidden off the screen */
+  bottom: -20%;
   background: rgba(0, 0, 0, 0.8);
   opacity: 0.8;
   padding: 0.5rem 0.8rem;
@@ -15,20 +15,20 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  color: var(--color-primary); /* Replace with your color variable */
+  color: var(--color-primary);
 }
 
 .scrollup_icon:hover {
-  color: var(--color-white); /* Replace with your color variable */
+  color: var(--color-white);
 }
 
 .showScroll {
-  bottom: 3rem; /* Move the button up to make it visible */
+  bottom: 3rem;
 }
 
 @media screen and (max-width: 768px) {
   .scrollup {
-    display: none; /* Hide the button entirely on mobile devices */
+    display: none;
   }
 }
 
