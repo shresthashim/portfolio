@@ -47,9 +47,9 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={styles.navbar}>
-      <Link href='#' className={activeNav === "#" ? styles.active : ""}>
+      <a href='#' className={activeNav === "#" ? styles.active : ""}>
         <AiFillHome />
-      </Link>
+      </a>
       <Link href='#about' className={activeNav === "#about" ? styles.active : ""}>
         <BiUser />
       </Link>

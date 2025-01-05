@@ -1,8 +1,8 @@
 "use client";
+
 import React, { useEffect } from "react";
 import styles from "./ScrollUp.module.css";
 import { AiOutlineArrowUp } from "react-icons/ai";
-import Link from "next/link";
 
 const ScrollUp: React.FC = () => {
   useEffect(() => {
@@ -20,11 +20,11 @@ const ScrollUp: React.FC = () => {
   }, []);
 
   return (
-    <Link href='#' className={styles.scrollup} aria-label='Scroll to top'>
+    <a href='#' className={styles.scrollup} aria-label='Scroll to top'>
       <i className={styles.scrollup_icon}>
         <AiOutlineArrowUp />
       </i>
-    </Link>
+    </a>
   );
 };
 
