@@ -8,18 +8,7 @@ import { BiSupport } from "react-icons/bi";
 import { VscFolderLibrary } from "react-icons/vsc";
 import Link from "next/link";
 
-interface Language {
-  name: string;
-  level: string;
-}
-
 const About: React.FC = () => {
-  const languages: Language[] = [
-    { name: "English", level: "Fluent" },
-    { name: "Nepali", level: "Native" },
-    { name: "Hindi", level: "Advanced" },
-  ];
-
   const [showLanguages, setShowLanguages] = useState<boolean>(false);
 
   const toggleLanguages = () => {
@@ -62,21 +51,7 @@ const About: React.FC = () => {
             such as Node.js and Express.js, along with database systems like MongoDB, PostgreSQL, MySQL, and containerization
             using Docker.
           </p>
-          <div className={styles.languages}>
-            <h5>Language Proficiency :</h5>
-            <button className={styles.toggle_languages} onClick={toggleLanguages}>
-              {showLanguages ? "Hide Languages" : "Show Languages"}
-            </button>
-            {showLanguages && (
-              <ul>
-                {languages.map((language, index) => (
-                  <li key={index}>
-                    {language.name} - {language.level}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
+
           <Link href='#contact' className={`btn btn-primary `}>
             Let's Talk
           </Link>
