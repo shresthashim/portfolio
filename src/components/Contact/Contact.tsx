@@ -60,8 +60,8 @@ const Contact: React.FC = () => {
           <article className={styles.contact_option}>
             <MdEmail className={styles.contact_option_icon} />
             <h4>Email</h4>
-            <h5>ashimsth89@gmail.com</h5>
-            <Link href='mailto:ashimsth89@gmail.com' rel='noreferrer' target='_blank'>
+            <h5>ashim@ashims.com.np</h5>
+            <Link href='mailto:ashim@ashims.com.np' rel='noreferrer' target='_blank'>
               Send A Message
             </Link>
           </article>
